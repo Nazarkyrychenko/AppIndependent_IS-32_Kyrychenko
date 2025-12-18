@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshop</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="./index.html" aria-label="Bookshop Home"
+          >BOOKSHOP</a
+        >
+
+        <nav class="nav" aria-label="Головна навігація">
+          <button
+            class="burger"
+            type="button"
+            aria-label="Відкрити меню"
+            aria-expanded="false"
+            aria-controls="main-menu"
+          >
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+
+          <ul id="main-menu" class="nav__list">
+            <li><a class="nav__link" href="./index.html">Home</a></li>
+            <li><a class="nav__link" href="./catalog.html">Catalog</a></li>
+            <li><a class="nav__link" href="./pages.html">Pages</a></li>
+            <li><a class="nav__link" href="./contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn btn--green" href="./cart.html">
+            Cart <span class="badge" data-cart-count>0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <h1 class="TitleName">BOOKSHOP</h1>
+
+      <section class="hero container">
+        <h2>Welcome to bookshop</h2>
+        <h3>New and used books</h3>
+        <p>
+          From applied literature to educational resources, we have a lot of
+          textbooks to offer you.
+        </p>
+        <a href="./catalog.html" class="btn btn--orange">View Catalog</a>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <div class="section-top">
+            <h2>Latest news</h2>
+
+            <div class="search-row">
+              <input
+                id="searchInput"
+                class="search-input"
+                type="text"
+                placeholder="Search news..."
+              />
+              <button class="btn btn--light" type="button" id="clearSearchBtn">
+                Clear
+              </button>
+            </div>
+            <p class="muted">
+              Пошук фільтрує новини без перезавантаження (DOM + localStorage).
+            </p>
+          </div>
+
+          <div class="news-grid">
+            <article class="news-item">
+              <img src="./assets/images/Book1.avif" alt="Book News" />
+              <p class="news-date">May 21, 2024 at 12:01 pm</p>
+              <h3 class="news-title">Check out what's new: BOOK NEWS</h3>
+            </article>
+
+            <article class="news-item">
+              <img
+                src="./assets/images/Book2.jfif"
+                alt="Perfect for your Book Club"
+              />
+              <p class="news-date">May 21, 2024 at 12:02 pm</p>
+              <h3 class="news-title">
+                The Midnight Library - Perfect for your Book Club
+              </h3>
+            </article>
+
+            <article class="news-item">
+              <img src="./assets/images/book3.jfif" alt="New Arrivals" />
+              <p class="news-date">May 21, 2024 at 12:03 pm</p>
+              <h3 class="news-title">
+                New Arrivals: It Ends With Us, Fourth Wing, and more
+              </h3>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-col">
+          <h3>About us</h3>
+          <p>
+            Bookshop is a place where you can find both new and used books on
+            various topics and genres.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick links</h3>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./catalog.html">Catalog</a></li>
+            <li><a href="./contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Gallery</h3>
+          <p>Check out photos of our best-selling books and reading spaces.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>News on Email</h3>
+          <p>
+            Subscribe to our newsletter to stay updated on the latest arrivals
+            and offers.
+          </p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <small>© 2025 Bookshop. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <script src="./js/store.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>

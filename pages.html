@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pages | Bookshop</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="./index.html">BOOKSHOP</a>
+
+        <nav class="nav" aria-label="Головна навігація">
+          <button
+            class="burger"
+            type="button"
+            aria-label="Відкрити меню"
+            aria-expanded="false"
+            aria-controls="main-menu"
+          >
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+
+          <ul id="main-menu" class="nav__list">
+            <li><a class="nav__link" href="./index.html">Home</a></li>
+            <li><a class="nav__link" href="./catalog.html">Catalog</a></li>
+            <li><a class="nav__link" href="./pages.html">Pages</a></li>
+            <li><a class="nav__link" href="./contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn btn--green" href="./cart.html">
+            Cart <span class="badge" data-cart-count>0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="container page-head">
+        <h1>Pages</h1>
+        <p class="muted">Додаткова сторінка для навігації.</p>
+      </section>
+
+      <section class="container">
+        <div class="card">
+          <h2>Quick navigation</h2>
+          <ul class="simple-list">
+            <li><a href="./catalog.html">Catalog</a></li>
+            <li><a href="./cart.html">Cart</a></li>
+            <li><a href="./contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-bottom">
+        <small>© 2025 Bookshop</small>
+      </div>
+    </footer>
+
+    <script src="./js/store.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>
